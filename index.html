@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="google-site-verification" content="4phdc361kqEOCk9aDCPlG8iiHH_Cy1TMQRuYVRDOuHQ" />
     <title>Arkavia Construction - Ahli Renovasi Rumah Surabaya</title>
     <meta name="description" content="Ahli renovasi rumah Surabaya terpercaya. RAB 100% transparan, jasa desain interior, perizinan, dan konstruksi bangunan. Wujudkan hunian impian Anda bersama Arkavia Construction.">
     <meta name="keywords" content="Ahli Renovasi Rumah Surabaya, Jasa Renovasi Tambaksari, Ahli Desain Interior Gubeng, Kontraktor Bangun Rumah Sukolilo, Jasa Arsitek Mulyorejo, Pemborong Rungkut, Biaya Renovasi Sidoarjo">
@@ -57,13 +56,11 @@
           "@type": "WebPage",
           "url": "https://ahli-renovasi-rumah-surabaya.vercel.app",
           "relatedLink": [
-            "https://dongkrakusaha.com/layanan-jasa-renovasi-rumah-tambaksari-surabaya",
-            "https://dongkrakusaha.com/layanan-spesialis-renovasi-rumah-3d-tambaksari",
-            "https://dongkrakusaha.com/layanan-ahli-desain-interior-mewah-gubeng-surabaya",
-            "https://dongkrakusaha.com/layanan-kontraktor-bangun-rumah-baru-sukolilo",
-            "https://dongkrakusaha.com/layanan-jasa-arsitek-renovasi-rumah-mulyorejo",
-            "https://dongkrakusaha.com/layanan-pemborong-renovasi-perluasan-rumah-rungkut",
-            "https://dongkrakusaha.com/layanan-estimasi-biaya-renovasi-rumah-sidoarjo"
+            "https://ahli-renovasi-rumah-surabaya.vercel.app/#layanan",
+            "https://ahli-renovasi-rumah-surabaya.vercel.app/#portofolio",
+            "https://ahli-renovasi-rumah-surabaya.vercel.app/#paket",
+            "https://ahli-renovasi-rumah-surabaya.vercel.app/#proses",
+            "https://ahli-renovasi-rumah-surabaya.vercel.app/#faq"
           ]
         }
       ]
@@ -94,6 +91,7 @@
             line-height: 1.7; 
             overflow-x: hidden; 
             -webkit-font-smoothing: antialiased; 
+            scroll-behavior: smooth;
         }
 
         h1, h2, h3, h4 { font-family: var(--font-serif); color: var(--text-main); font-weight: 400; line-height: 1.2; }
@@ -168,7 +166,7 @@
         /* Continuous Marquee (Warna Asli) */
         .marquee-section { padding: 3rem 0; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); background: var(--bg-surface); overflow: hidden; }
         .marquee-track { display: flex; gap: 6rem; align-items: center; width: max-content; animation: scroll 40s linear infinite; }
-        .marquee-track img { height: 50px; width: auto; object-fit: contain; } /* Ukuran medium elegan, warna asli */
+        .marquee-track img { height: 50px; width: auto; object-fit: contain; }
         @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
         /* Layanan Cards */
@@ -203,35 +201,34 @@
         .bento-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
         .bento-item:hover img { transform: scale(1.08); }
         
-        /* Specific Grid Layouts per Project */
-        /* Masjid Jombang (5 Items) */
+        /* Grid Masjid (5) */
         .grid-masjid .item-1 { grid-column: span 8; grid-row: span 2; }
         .grid-masjid .item-2 { grid-column: span 4; grid-row: span 1; }
         .grid-masjid .item-3 { grid-column: span 4; grid-row: span 1; }
         .grid-masjid .item-4 { grid-column: span 6; grid-row: span 1; }
         .grid-masjid .item-5 { grid-column: span 6; grid-row: span 1; }
         
-        /* Ponpes (5 Items) */
+        /* Grid Ponpes (5) */
         .grid-ponpes .item-1 { grid-column: span 6; grid-row: span 2; }
         .grid-ponpes .item-2 { grid-column: span 6; grid-row: span 1; }
         .grid-ponpes .item-3 { grid-column: span 3; grid-row: span 1; }
         .grid-ponpes .item-4 { grid-column: span 3; grid-row: span 1; }
-        .grid-ponpes .item-5 { grid-column: span 12; grid-row: span 1; } /* Panoramic bottom */
+        .grid-ponpes .item-5 { grid-column: span 12; grid-row: span 1; }
 
-        /* Mr M (5 Items) */
+        /* Grid Mr M (5) */
         .grid-mrm .item-1 { grid-column: span 8; grid-row: span 2; }
         .grid-mrm .item-2 { grid-column: span 4; grid-row: span 1; }
         .grid-mrm .item-3 { grid-column: span 4; grid-row: span 1; }
         .grid-mrm .item-4 { grid-column: span 6; grid-row: span 1; }
         .grid-mrm .item-5 { grid-column: span 6; grid-row: span 1; }
 
-        /* Private House (4 Items) */
+        /* Grid Private House (4) */
         .grid-private .item-1 { grid-column: span 12; grid-row: span 2; }
         .grid-private .item-2 { grid-column: span 4; grid-row: span 1; }
         .grid-private .item-3 { grid-column: span 4; grid-row: span 1; }
         .grid-private .item-4 { grid-column: span 4; grid-row: span 1; }
 
-        /* Ibu Lina (2 Items) */
+        /* Grid Ibu Lina (2) */
         .grid-lina .item-1 { grid-column: span 6; grid-row: span 2; }
         .grid-lina .item-2 { grid-column: span 6; grid-row: span 2; }
 
@@ -569,14 +566,9 @@
                     <li>Perspektif 3 Dimensi</li>
                     <li>Tampak Bangunan</li>
                     <li>Potongan Bangunan</li>
-                    <li>Detail Atap</li>
-                    <li>Detail Kusen</li>
-                    <li>Detail Lantai</li>
-                    <li>Detail Pondasi</li>
-                    <li>Detail Kolom & Balok</li>
-                    <li>Detail Saluran Air Bersih</li>
-                    <li>Detail Saluran Air Kotor</li>
-                    <li>Detail Kelistrikan</li>
+                    <li>Detail Atap, Kusen, Lantai</li>
+                    <li>Detail Pondasi, Kolom & Balok</li>
+                    <li>Detail Saluran Air & Kelistrikan</li>
                     <li>Perhitungan Struktur</li>
                     <li>Rencana Kerja Dan Syarat-syarat (RKS)</li>
                     <li style="color: var(--accent-gold);">RAB</li>
@@ -657,13 +649,13 @@
             <div>
                 <h4 style="font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-gold); margin-bottom: 1.5rem;">Layanan & Area Cakupan</h4>
                 <div class="footer-silo">
-                    <a href="https://dongkrakusaha.com/layanan-jasa-renovasi-rumah-tambaksari-surabaya">Jasa Renovasi Tambaksari</a>
-                    <a href="https://dongkrakusaha.com/layanan-spesialis-renovasi-rumah-3d-tambaksari">Spesialis Renovasi 3D</a>
-                    <a href="https://dongkrakusaha.com/layanan-ahli-desain-interior-mewah-gubeng-surabaya">Ahli Interior Gubeng</a>
-                    <a href="https://dongkrakusaha.com/layanan-kontraktor-bangun-rumah-baru-sukolilo">Kontraktor Bangun Sukolilo</a>
-                    <a href="https://dongkrakusaha.com/layanan-jasa-arsitek-renovasi-rumah-mulyorejo">Arsitek Mulyorejo</a>
-                    <a href="https://dongkrakusaha.com/layanan-pemborong-renovasi-perluasan-rumah-rungkut">Pemborong Rungkut</a>
-                    <a href="https://dongkrakusaha.com/layanan-estimasi-biaya-renovasi-rumah-sidoarjo">Biaya Renovasi Sidoarjo</a>
+                    <a href="#layanan" title="Jasa Renovasi Tambaksari">Jasa Renovasi Tambaksari</a>
+                    <a href="#paket" title="Spesialis Renovasi 3D">Spesialis Renovasi 3D</a>
+                    <a href="#portofolio" title="Ahli Interior Gubeng">Ahli Interior Gubeng</a>
+                    <a href="#proses" title="Kontraktor Bangun Sukolilo">Kontraktor Bangun Sukolilo</a>
+                    <a href="#layanan" title="Arsitek Mulyorejo">Arsitek Mulyorejo</a>
+                    <a href="#paket" title="Pemborong Rungkut">Pemborong Rungkut</a>
+                    <a href="#faq" title="Biaya Renovasi Sidoarjo">Biaya Renovasi Sidoarjo</a>
                 </div>
             </div>
         </div>
