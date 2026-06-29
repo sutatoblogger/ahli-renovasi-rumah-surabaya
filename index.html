@@ -689,24 +689,40 @@
   }, observerOptions);
   revealElements.forEach(el => observer.observe(el));
 
-  // Voice SEO API Client-Side
+  // Voice SEO API - Improved Robustness
   const synth = window.speechSynthesis;
+
   document.querySelectorAll('.voice-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
+      
+      // 1. Jika tombol yang ditekan sedang memutar, cukup stop
+      if (btn.classList.contains('playing')) {
+        synth.cancel();
+        btn.classList.remove('playing');
+        return;
+      }
+
+      // 2. Stop suara lain yang mungkin sedang berjalan
+      synth.cancel();
       document.querySelectorAll('.voice-btn').forEach(b => b.classList.remove('playing'));
       
-      if (synth.speaking) { synth.cancel(); }
-      
+      // 3. Siapkan utterance baru
       const textToSpeak = btn.getAttribute('data-text');
       const utterance = new SpeechSynthesisUtterance(textToSpeak);
+      
+      // Memastikan bahasa Indonesia
       utterance.lang = 'id-ID';
       
-      btn.classList.add('playing');
-      
+      // Event Handlers
+      utterance.onstart = () => { btn.classList.add('playing'); };
       utterance.onend = () => { btn.classList.remove('playing'); };
-      utterance.onerror = () => { btn.classList.remove('playing'); };
+      utterance.onerror = (err) => { 
+        console.error("Speech Synthesis Error:", err);
+        btn.classList.remove('playing'); 
+      };
       
+      // 4. Bicara
       synth.speak(utterance);
     });
   });
